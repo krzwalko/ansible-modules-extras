@@ -23,7 +23,9 @@ options:
 def main():
     module = AnsibleModule(
         argument_spec=dict(
-            server=dict(required=True§)
+            server=dict(required=True),
+				username=dict(required=True),
+				password=dict(required=True)
         )
     )
 
